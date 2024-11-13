@@ -16,7 +16,8 @@
 		"Percy.vscode-numpy-viewer", // numpy配列を閲覧
 		"GitHub.copilot", // GitHub Copilot
 		"ms-toolsai.jupyter", // Jupyter Notebook拡張機能
-		"ms-python.python" // Python拡張機能
+		"ms-python.python", // Python拡張機能
+		"yzhang.markdown-all-in-one" // Markdown拡張機能
 	],
 	// requirements.txtに書かれているライブラリをインストール
 	// Dockfileにも書いてあるが、イメージを再ビルドしなくても、
