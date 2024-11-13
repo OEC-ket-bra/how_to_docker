@@ -41,18 +41,20 @@ Python の依存パッケージを記載したファイルです。`pip install 
 ## 使用方法
 
 1. **Docker イメージのビルド**:
+   - docker-compose.yml (右クリ) -> Compose up
+    ![1](pics/1.png)
 
-    ```bash
-    docker-compose build
-    ```
+1. **コンテナにアタッチ**:
+   - Dockerアイコン（くじらのやつ）-> ビルドしたコンテナ（右クリ）-> Attach VSCode
+    ![2](pics/2.png)
 
-2. **コンテナの起動**:
+1. **コンテナ内でディレクトリを開く**:
+   - 新しいVScodeのウインドウが作れたら、Open Folder -> ./root をwdとして開く
+   ![3](pics/3.png)
 
-    ```bash
-    docker-compose up -d
-    ```
+1. **開発開始！**:
+   - srcの中のコードを試したり、コードを書いたりしてみましょう
+   ![4](pics/4.png)
 
-3. **VS Code の Remote Containers でアタッチ**:
-   - VS Code を開き、Remote - Containers 拡張機能でコンテナに接続します。
+requirements.txtからパッケージを追加したり、コンテナを停止・再起動・removeしたり、docker-compose.ymlからvolumeするディレクトリを変えたりして遊んでみましょう
 
-以上で、Docker と VS Code を使った一貫性のある開発環境がセットアップされ、ホスト環境に依存しない形で開発を進めることができます。
