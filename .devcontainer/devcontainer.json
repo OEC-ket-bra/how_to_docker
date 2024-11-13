@@ -1,0 +1,26 @@
+{
+	"name": "Python_Container",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "." // Dockerfileのあるディレクトリ, Dockerがアクセスできる範囲
+	},
+	"settings": {
+		"python.pythonPath": "/usr/local/bin/python3", // 使用するPythonのパス
+	},
+	"extensions": [ // コンテナ上でも使いたいVSCodeの拡張機能をここに追加
+		"ms-python.python", // Python拡張機能
+		"njpwerner.autodocstring", // 関数のドキュメンテーション文字列を自動生成
+		"ms-toolsai.datawrangler", // 配列の中身を閲覧
+		"usernamehw.errorlens", // エラー箇所を強調
+		"mechatroner.rainbow-csv", // csvを閲覧
+		"Percy.vscode-numpy-viewer", // numpy配列を閲覧
+		"GitHub.copilot", // GitHub Copilot
+		"ms-toolsai.jupyter", // Jupyter Notebook拡張機能
+		"ms-python.python" // Python拡張機能
+	],
+	// requirements.txtに書かれているライブラリをインストール
+	// Dockfileにも書いてあるが、イメージを再ビルドしなくても、
+	// コンテナの起動時にパッケージをインストールできるため、パッケージの変更をすぐに反映できる
+	// docker stop -> requirements.txtの変更 -> docker start で反映される!!
+	"postCreateCommand": "pip install -r requirements.txt"
+}

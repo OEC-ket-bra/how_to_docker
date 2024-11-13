@@ -1,0 +1,29 @@
+{
+    "workbench.editor.enablePreview": true,
+    "editor.unicodeHighlight.nonBasicASCII": false, // 非ASCII文字をハイライトしない
+    "editor.renderControlCharacters": true, // 制御文字を表示する
+    "terminal.integrated.defaultProfile.windows": "Git Bash", // デフォルトのターミナルをGit Bashにする
+    "jupyter.askForKernelRestart": false, // カーネルの再起動を確認しない
+    "workbench.editorAssociations": {
+        "*.db": "default", // 拡張子が.dbのファイルはデフォルトエディタで開く
+        "*.npy": "numpy.preview" // 拡張子が.npyのファイルはnumpy.previewで開く
+    },
+    "autoDocstring.docstringFormat": "numpy",
+    "autoDocstring.startOnNewLine": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "git.autofetch": true, // Gitリポジトリを自動で取得
+    "git.confirmSync": false, // Git の同期操作の際に確認メッセージを表示しません
+    "editor.formatOnType": true, // タイプ時に自動フォーマット
+    "editor.formatOnSave": true, // 保存時に自動フォーマット
+    "editor.formatOnPaste": true, // 貼り付け時に自動フォーマット
+    "jupyter.interactiveWindow.creationMode": "perFile", // ファイルごとにインタラクティブウィンドウを作成
+    "github.copilot.editor.enableAutoCompletions": true, // GitHub Copilotの自動補完を有効
+    "interactiveWindow.executeWithShiftEnter": true, // Shift + Enterでセルを実行
+    "python.analysis.inlayHints.callArgumentNames": "partial", // 関数の引数名を部分的に表示
+    "editor.guides.bracketPairs": true, // 括弧の対応を表示
+    "files.exclude": {
+        "**/.git": false
+    }
+}
