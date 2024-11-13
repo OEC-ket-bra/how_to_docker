@@ -1,1 +1,1 @@
-print("tasukete~")
+print("foobar ><")
