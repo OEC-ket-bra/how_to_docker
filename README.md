@@ -41,18 +41,19 @@ Python の依存パッケージを記載したファイルです。`pip install 
 ## 使用方法
 
 1. **Docker イメージのビルド**:
+   - docker-compose.ymlのcontainer_nameを適当な名前に変更
    - docker-compose.yml (右クリ) -> Compose up
     ![1](pics/1.png)
 
-1. **コンテナにアタッチ**:
+2. **コンテナにアタッチ**:
    - Dockerアイコン（くじらのやつ）-> ビルドしたコンテナ（右クリ）-> Attach VSCode
     ![2](pics/2.png)
 
-1. **コンテナ内でディレクトリを開く**:
+3. **コンテナ内でディレクトリを開く**:
    - 新しいVScodeのウインドウが作れたら、Open Folder -> ./root をwdとして開く
    ![3](pics/3.png)
 
-1. **開発開始！**:
+4. **開発開始！**:
    - srcの中のコードを試したり、コードを書いたりしてみましょう
    ![4](pics/4.png)
 

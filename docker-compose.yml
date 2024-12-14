@@ -3,7 +3,7 @@ services:
   python3:
     restart: always
     build: .
-    container_name: 'docker_test'
+    container_name: 'docker_test' # 適当に変更
     working_dir: '/root/'
     tty: true
     volumes:
