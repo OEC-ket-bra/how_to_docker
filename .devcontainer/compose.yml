@@ -1,7 +1,7 @@
 services:
   jupyter:
-    image: OEC-Lab/jupyter:1.0
-    container_name: 'OEC-Lab-jupyter'
+    image: OEC-Lab1/jupyter:1.0
+    container_name: 'OEC-Lab1-jupyter'
     environment:
       - TZ= Asia/Tokyo
     build: ./jupyter
